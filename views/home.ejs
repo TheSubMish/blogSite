@@ -1,0 +1,29 @@
+<%- include("partials/header") -%>
+    <div>
+        <h1>
+            <%= title %>
+        </h1>
+    </div>
+    <div>
+        <p>
+            <%= startingContent %>
+        </p>
+    </div>
+    <div>
+        <% posts.forEach(function(post){ %>
+            <div>
+                <h1>
+                    <%= post.title %>
+                </h1>
+            </div>
+            <div>
+                <p>
+                    <%= post.content.substring(0,100) + " ..." %>
+                        <a href="/post/<%= post.title %>">Read more</a>
+                </p>
+            </div>
+            <% }) %>
+    </div>
+    <%- include("partials/footer") -%>
+
+        <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam provident pariatur fugit libero quas tenetur expedita illo aspernatur assumenda, laudantium asperiores accusantium molestias soluta quos. Molestiae, ipsam! In ducimus velit nam sint nesciunt beatae harum provident commodi quaerat magnam quibusdam officiis ratione ab voluptatibus porro incidunt cumque quasi iste nihil, magni a laborum tempora iure! Eos, illo optio corrupti suscipit quae blanditiis neque voluptatem iusto quisquam quos, obcaecati ex ducimus facere iste numquam sapiente. Quidem voluptatem incidunt nobis cum dolores tempore corporis sequi in placeat, magnam totam, itaque consequatur repellendus vero eligendi omnis deserunt, provident maxime illo reiciendis? Eius perspiciatis dignissimos id dolorem explicabo animi labore nobis quia, necessitatibus doloribus possimus, facere atque dolore adipisci officia blanditiis ab modi facilis quod vitae eveniet optio sit ducimus. Eum, dolores? Similique magni hic animi unde veritatis. Aperiam, accusamus corporis sequi iure quo exercitationem corrupti tempora reiciendis officiis sint maxime, ullam facere consectetur eum placeat voluptatibus saepe odio eius est in aliquid reprehenderit quaerat? Velit nemo, beatae alias facere assumenda rerum doloremque corrupti maiores, expedita a cupiditate porro exercitationem enim dolorem odio itaque veritatis delectus doloribus repudiandae laboriosam modi ea! Quidem perferendis ea reprehenderit atque officiis vitae distinctio a veniam, similique autem deleniti! -->
